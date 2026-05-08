@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import Loader from "@/components/Loader";
 
 export const metadata = {
   title: "VIP Assist India — Luxury Airport Concierge & VIP Meet & Greet",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased bg-[#f7f8fc] text-navy-900 selection:bg-electric-500/20">
+        <Loader />
         <SmoothScroll />
         <Navbar />
         <main>{children}</main>
